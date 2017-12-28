@@ -1,0 +1,50 @@
+html, body {
+  background-color: #F6F8FA;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button {
+  width: 60px;
+  height: 30px;
+}
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+  img {
+    width: 100%;
+  }
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-active {
+  opacity: .4;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.variable div {
+  height: 400px;
+  width: 600px;
+}

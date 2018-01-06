@@ -9,9 +9,13 @@
     "build": "npm run build:clean && npm run build:sass && npm run build:autoprefixer && npm run test",
     "build:clean": "rm -rf css/*.css",
     "build:sass": "sass --sourcemap=none --update sass/style.scss:css/style.css",
+    "build:slick": "sass --sourcemap=none --update sass/slick.scss:css/slick.css",
+    "build:slicktheme": "sass --sourcemap=none --update sass/slick-theme.scss:css/slick-theme.css",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "watch": "parallelshell \"npm run watch:sass\" \"npm run watch:autoprefixer\" \"npm run watch:browsersync\"",
     "watch:sass": "sass --watch sass/style.scss:css/style.css",
+    "watch:slick": "sass --watch sass/slick.scss:css/slick.css",
+    "watch:slicktheme": "sass --watch sass/slick-theme.scss:css/slick-theme.css",
     "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
     "watch:browsersync": "browser-sync start --server --files css/*.css *.html"
   },
